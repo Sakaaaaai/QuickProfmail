@@ -1,4 +1,4 @@
-# Professor Email Templates
+# Quick Prof Mail
 
 大学生・大学院生向けの、教授へのメール作成を支援するWebアプリケーションです。
 テンプレート管理、変数による自動挿入、そしてGoogle Gemini APIを活用したAIメール生成機能を備えています。
