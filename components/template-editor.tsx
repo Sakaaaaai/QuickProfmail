@@ -42,7 +42,7 @@ const VARIABLES = [
 ]
 
 // Gemini APIキー
-const GEMINI_API_KEY = "AIzaSyCZ2_cYmMSlWq-D4OmXh79ZUJ46lkn8WqU"
+const GEMINI_API_KEY = process.env.NEXT_PUBLIC_GEMINI_API_KEY || ""
 
 export default function TemplateEditor({
   professors,
@@ -173,10 +173,10 @@ export default function TemplateEditor({
         category:
           categories && categories.length > 0
             ? {
-                id: categories[0].id,
-                name: categories[0].name,
-                color: categories[0].color,
-              }
+              id: categories[0].id,
+              name: categories[0].name,
+              color: categories[0].color,
+            }
             : defaultCategory,
         createdAt: Date.now(),
         updatedAt: Date.now(),
