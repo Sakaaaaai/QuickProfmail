@@ -52,17 +52,7 @@ npm install
 pnpm install
 ```
 
-### 3. 環境変数の設定
-
-プロジェクトルートに `.env.local` ファイルを作成し、Gemini APIキーを設定してください。
-
-```bash
-# .env.local
-NEXT_PUBLIC_GEMINI_API_KEY=your_api_key_here
-```
-※ APIキーは [Google AI Studio](https://aistudio.google.com/) から取得できます。
-
-### 4. 開発サーバーの起動
+### 3. 開発サーバーの起動
 
 ```bash
 npm run dev
